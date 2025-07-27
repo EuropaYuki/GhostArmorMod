@@ -6,7 +6,5 @@ import net.minecraftforge.fml.common.Mod;
 public class GhostArmorMod {
     public static final String MOD_ID = "ghostarmormod";
 
-    public GhostArmorMod() {
 
-    }
 }
