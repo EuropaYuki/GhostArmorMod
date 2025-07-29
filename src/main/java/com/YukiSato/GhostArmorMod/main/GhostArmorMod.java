@@ -1,5 +1,6 @@
 package com.YukiSato.GhostArmorMod.main;
 
+import com.YukiSato.GhostArmorMod.regi.GhostArmorModItems;
 import com.YukiSato.GhostArmorMod.regi.tab.GhostArmorModTabs;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -11,6 +12,7 @@ public class GhostArmorMod {
 
     public GhostArmorMod () {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+        GhostArmorModItems.ITEMS.register(bus);
         GhostArmorModTabs.MOD_TABS.register(bus);
     }
 }
