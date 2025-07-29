@@ -1,3 +1,4 @@
 {
-  "itemGroup.ghost_armor_main" : "GhostArmorMod"
+  "itemGroup.ghost_armor_main" : "GhostArmorMod",
+  "item.ghostarmormod.ghost_ingot" : "GhostIngot"
 }
