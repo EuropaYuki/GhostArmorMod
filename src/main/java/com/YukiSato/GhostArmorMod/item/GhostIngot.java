@@ -2,8 +2,8 @@ package com.YukiSato.GhostArmorMod.item;
 
 import net.minecraft.world.item.Item;
 
-public class Inghost extends Item {
-    public Inghost() {
+public class GhostIngot extends Item {
+    public GhostIngot() {
         super(new Properties().fireResistant());
     }
 }
