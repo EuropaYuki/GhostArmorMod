@@ -1,5 +1,6 @@
 package com.YukiSato.GhostArmorMod.item.armor;
 
+import com.YukiSato.GhostArmorMod.main.GhostArmorMod;
 import net.minecraft.Util;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.util.LazyLoadedValue;
@@ -8,6 +9,7 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
 
 import java.util.EnumMap;
+import java.util.function.Supplier;
 
 public class ModArmorMaterial implements ArmorMaterial {
 
@@ -26,6 +28,16 @@ public class ModArmorMaterial implements ArmorMaterial {
         map.put(ArmorItem.Type.LEGGINGS, 15);
         map.put(ArmorItem.Type.BOOTS, 13);
     });
+    public ModArmorMaterial(String id, int durabilityMultiplier, EnumMap<ArmorItem.Type, Integer> protectionFunctionForType, int enchantmentValue, SoundEvent sound, float toughness, float knockbackResistance, Supplier<Ingredient> ingredient) {
+        this.id = GhostArmorMod.MOD_ID + ":" + id;
+        this.durabilityMultiplier = durabilityMultiplier;
+        this.protectionFunctionForType = protectionFunctionForType;
+        this.enchantmentValue = enchantmentValue;
+        this.sound = sound;
+        this.toughness = toughness;
+        this.knockbackResistance = knockbackResistance;
+        this.repairIngredient = new LazyLoadedValue<>(ingredient);
+    }
 
     @Override
     public int getDurabilityForType(ArmorItem.Type type) {
