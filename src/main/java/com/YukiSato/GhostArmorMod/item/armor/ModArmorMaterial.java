@@ -41,41 +41,41 @@ public class ModArmorMaterial implements ArmorMaterial {
 
     @Override
     public int getDurabilityForType(ArmorItem.Type type) {
-        return 0;
+        return HEALTH_FUNCTION_FOR_TYPE.get(type) * this.durabilityMultiplier;
     }
 
     @Override
     public int getDefenseForType(ArmorItem.Type type) {
-        return 0;
+        return this.protectionFunctionForType.get(type);
     }
 
     @Override
     public int getEnchantmentValue() {
-        return 0;
+        return this.enchantmentValue;
     }
 
     @Override
     public SoundEvent getEquipSound() {
-        return null;
+        return this.sound;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return null;
+        return this.repairIngredient.get();
     }
 
     @Override
     public String getName() {
-        return null;
+        return this.id;
     }
 
     @Override
     public float getToughness() {
-        return 0;
+        return this.toughness;
     }
 
     @Override
     public float getKnockbackResistance() {
-        return 0;
+        return this.knockbackResistance;
     }
 }
