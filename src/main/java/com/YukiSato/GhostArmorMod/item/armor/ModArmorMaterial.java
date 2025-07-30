@@ -10,7 +10,23 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.EnumMap;
 
 public class ModArmorMaterial implements ArmorMaterial {
-    
+
+    private final String id;
+    private final int durabilityMultiplier;
+    private final EnumMap<ArmorItem.Type, Integer> protectionFunctionForType;
+    private final int enchantmentValue;
+    private final SoundEvent sound;
+    private final float toughness;
+    private final float knockbackResistance;
+    private final LazyLoadedValue<Ingredient> repairIngredient;
+
+    private static final EnumMap<ArmorItem.Type, Integer> HEALTH_FUNCTION_FOR_TYPE = Util.make(new EnumMap<>(ArmorItem.Type.class), (map) -> {
+        map.put(ArmorItem.Type.HELMET, 11);
+        map.put(ArmorItem.Type.CHESTPLATE, 16);
+        map.put(ArmorItem.Type.LEGGINGS, 15);
+        map.put(ArmorItem.Type.BOOTS, 13);
+    });
+
     @Override
     public int getDurabilityForType(ArmorItem.Type type) {
         return 0;
