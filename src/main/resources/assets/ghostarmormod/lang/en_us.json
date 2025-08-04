@@ -1,4 +1,6 @@
 {
   "itemGroup.ghost_armor_main" : "GhostArmorMod",
-  "item.ghostarmormod.ghost_ingot" : "GhostIngot"
+  "item.ghostarmormod.ghost_ingot" : "GhostIngot",
+  "key.categories.ghostarmormod" : "GhostArmorMod",
+  "key.ghostarmormod.rocketMode" : "RocketMode"
 }
