@@ -9,7 +9,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.EnumMap;
 
 public class GhostArmorMaterials {
-    public static final ModArmorMaterial GHOST = new ModArmorMaterial("ghost", 50,
+    public static final ModArmorMaterial GHOST = new ModArmorMaterial("ghost", 530000,
             Util.make(new EnumMap<>(ArmorItem.Type.class),
                     (type)-> {
                 type.put(ArmorItem.Type.HELMET, 5);
