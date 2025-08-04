@@ -5,6 +5,7 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ItemStack;
@@ -43,6 +44,23 @@ public class GhostChestPlate extends ArmorItem {
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> list, TooltipFlag tooltipFlag) {
         list.add(Component.literal("Fly : " + modeName(stack)).withStyle(ChatFormatting.AQUA));
+    }
+    @Override
+    public boolean canElytraFly(ItemStack stack, LivingEntity entity) {
+        if (getModeNum(stack) == 1) {
+            return true;
+        }
+        return false;
+    }
+    @Override
+    public boolean elytraFlightTick(ItemStack stack, LivingEntity entity, int flightTicks) {
+        if (!entity.level().isClientSide) {
+            int nextFlightTick = flightTicks + 1;
+            if (nextFlightTick % 10 == 0) {
+                entity.gameEvent(net.minecraft.world.level.gameevent.GameEvent.ELYTRA_GLIDE);
+            }
+        }
+        return true;
     }
 
     private boolean fullArmor(Player player) {
