@@ -10,6 +10,9 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.damagesource.DamageType;
 import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -28,6 +31,17 @@ import java.util.List;
 public class GhostChestPlate extends ArmorItem {
     public GhostChestPlate() {
         super(GhostArmorMaterials.GHOST, Type.CHESTPLATE, new Properties().fireResistant());
+    }
+
+    @Override
+    public void inventoryTick(ItemStack stack, Level world, Entity entity, int p_41407_, boolean p_41408_) {
+        Player player = (Player) entity;
+        if (player.getItemBySlot(EquipmentSlot.CHEST).getItem() == GhostArmorModItems.GHOST_CHEST_PLATE.get()) {
+            player.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 20, 0, false, false));
+            player.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 20, 0, false, false));
+            player.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 20, 0, false, false));
+            player.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 20, 0, false, false));
+        }
     }
 
     @Override
@@ -112,5 +126,5 @@ public class GhostChestPlate extends ArmorItem {
             }
         }
     }
-    
+
 }
