@@ -51,7 +51,7 @@ public class GhostChestPlate extends ArmorItem {
         flyMode(stack, player);
         Vec3 vec3 = player.getLookAngle();
         if (world.isClientSide && getModeNum(stack) == 1) {
-            if (GhostKeyBind.ghostKey[0].consumeClick()) {
+            if (GhostKeyBind.ghostKey[0].isDown()) {
                 player.lerpMotion(vec3.x * 3, vec3.y * 3, vec3.z * 3);
             }
         }
