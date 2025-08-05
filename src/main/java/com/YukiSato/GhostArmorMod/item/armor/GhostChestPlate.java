@@ -21,6 +21,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
+import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -123,6 +124,17 @@ public class GhostChestPlate extends ArmorItem {
                 if (event.getSource().is(type) && GhostChestPlate.getModeNum(stack) == 1) {
                     event.setAmount(0.0F);
                 }
+            }
+        }
+    }
+    @Mod.EventBusSubscriber(modid = GhostArmorMod.MOD_ID)
+    public class Visibility {
+        @SubscribeEvent
+        public static void onVisibility(LivingEvent.LivingVisibilityEvent event) {
+            Player minecraftPlayer = Minecraft.getInstance().player;
+            ItemStack stack = minecraftPlayer.getItemBySlot(EquipmentSlot.CHEST);
+            if (event.getEntity() instanceof Player player && getModeNum(stack) == 1) {
+                event.modifyVisibility(0.0D);
             }
         }
     }
