@@ -1,5 +1,6 @@
 package com.YukiSato.GhostArmorMod.item.armor;
 
+import com.YukiSato.GhostArmorMod.main.GhostKeyBind;
 import com.YukiSato.GhostArmorMod.regi.GhostArmorModItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
@@ -11,6 +12,7 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
@@ -18,6 +20,18 @@ import java.util.List;
 public class GhostChestPlate extends ArmorItem {
     public GhostChestPlate() {
         super(GhostArmorMaterials.GHOST, Type.CHESTPLATE, new Properties().fireResistant());
+    }
+
+    @Override
+    public void onInventoryTick(ItemStack stack, Level world, Player player, int slotIndex, int selectedIndex) {
+        super.onInventoryTick(stack, world, player, slotIndex, selectedIndex);
+        flyMode(stack, player);
+        Vec3 vec3 = player.getLookAngle();
+        if (world.isClientSide && getModeNum(stack) == 1) {
+            if (GhostKeyBind.ghostKey[0].consumeClick()) {
+                player.lerpMotion(vec3.x * 7, vec3.y * 7, vec3.z * 7);
+            }
+        }
     }
 
     private void flyMode(ItemStack stack, Player player) {
