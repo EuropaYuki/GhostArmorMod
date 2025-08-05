@@ -52,7 +52,7 @@ public class GhostChestPlate extends ArmorItem {
         Vec3 vec3 = player.getLookAngle();
         if (world.isClientSide && getModeNum(stack) == 1) {
             if (GhostKeyBind.ghostKey[0].consumeClick()) {
-                player.lerpMotion(vec3.x * 7, vec3.y * 7, vec3.z * 7);
+                player.lerpMotion(vec3.x * 3, vec3.y * 3, vec3.z * 3);
             }
         }
     }
