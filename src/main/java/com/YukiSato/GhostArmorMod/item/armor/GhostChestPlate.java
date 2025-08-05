@@ -1,10 +1,15 @@
 package com.YukiSato.GhostArmorMod.item.armor;
 
+import com.YukiSato.GhostArmorMod.main.GhostArmorMod;
 import com.YukiSato.GhostArmorMod.main.GhostKeyBind;
 import com.YukiSato.GhostArmorMod.regi.GhostArmorModItems;
 import net.minecraft.ChatFormatting;
+import net.minecraft.client.Minecraft;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.damagesource.DamageType;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -13,6 +18,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
+import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
@@ -40,7 +48,7 @@ public class GhostChestPlate extends ArmorItem {
         }
         stack.getTag().putInt("canFly", fullArmor(player) ? 1 : 0);
     }
-    public int getModeNum(ItemStack stack) {
+    public static int getModeNum(ItemStack stack) {
         if (stack.getTag() == null) {
             return 0;
         }
@@ -85,6 +93,24 @@ public class GhostChestPlate extends ArmorItem {
             return true;
         }
         return false;
+    }
+
+    @Mod.EventBusSubscriber(modid = GhostArmorMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
+    public class DamageAmount {
+        @SubscribeEvent
+        public static void setDamage(LivingHurtEvent event) {
+            ResourceKey[] damages = {
+                    DamageTypes.FALL,
+                    DamageTypes.FLY_INTO_WALL
+            };
+            Player player = Minecraft.getInstance().player;
+            ItemStack stack = player.getItemBySlot(EquipmentSlot.CHEST);
+            for (ResourceKey<DamageType> type : damages) {
+                if (event.getSource().is(type) && GhostChestPlate.getModeNum(stack) == 1) {
+                    event.setAmount(0.0F);
+                }
+            }
+        }
     }
     
 }
