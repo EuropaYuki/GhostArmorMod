@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iii",
+        "i i",
+        "i i"
+    ],
+    "key": {
+        "i": {
+            "item": "ghostarmormod:ghost_ingot"
+        }
+    },
+    "result": {
+        "item": "ghostarmormod:ghost_leggings",
+        "count": 1
+    }
+}

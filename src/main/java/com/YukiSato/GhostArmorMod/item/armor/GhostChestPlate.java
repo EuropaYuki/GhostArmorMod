@@ -75,6 +75,7 @@ public class GhostChestPlate extends ArmorItem {
             case 0 -> "Disable";
             case 1 -> "Enable";
             default -> "Unknown";
+
         };
     }
 
