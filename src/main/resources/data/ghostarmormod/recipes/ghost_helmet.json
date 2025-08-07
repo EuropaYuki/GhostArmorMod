@@ -6,11 +6,11 @@
     ],
     "key": {
         "i": {
-            "item": "ghostarmormod:ghost_ingot"
+            "item": "minecraft:iron_ingot"
         }
     },
     "result": {
-        "item": " ghostarmormod:ghost_helmet",
+        "item": "minecraft:iron_helmet",
         "count": 1
     }
 }

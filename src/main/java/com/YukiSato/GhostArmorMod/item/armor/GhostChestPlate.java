@@ -112,7 +112,7 @@ public class GhostChestPlate extends ArmorItem {
     }
 
     @Mod.EventBusSubscriber(modid = GhostArmorMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
-    public class DamageAmount {
+    public static class DamageAmount {
         @SubscribeEvent
         public static void setDamage(LivingHurtEvent event) {
             ResourceKey[] damages = {
@@ -120,24 +120,28 @@ public class GhostChestPlate extends ArmorItem {
                     DamageTypes.FLY_INTO_WALL
             };
             Player player = Minecraft.getInstance().player;
-            ItemStack stack = player.getItemBySlot(EquipmentSlot.CHEST);
-            for (ResourceKey<DamageType> type : damages) {
-                if (event.getSource().is(type) && GhostChestPlate.getModeNum(stack) == 1) {
-                    event.setAmount(0.0F);
+            if (player != null) {
+                ItemStack stack = player.getItemBySlot(EquipmentSlot.CHEST);
+                for (ResourceKey<DamageType> type : damages) {
+                    if (event.getSource().is(type) && GhostChestPlate.getModeNum(stack) == 1) {
+                        event.setAmount(0.0F);
+                    }
                 }
             }
         }
     }
-    @Mod.EventBusSubscriber(modid = GhostArmorMod.MOD_ID)
-    public class Visibility {
+
+    @Mod.EventBusSubscriber(modid = GhostArmorMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
+    public static class Visibility {
         @SubscribeEvent
         public static void onVisibility(LivingEvent.LivingVisibilityEvent event) {
             Player minecraftPlayer = Minecraft.getInstance().player;
-            ItemStack stack = minecraftPlayer.getItemBySlot(EquipmentSlot.CHEST);
-            if (event.getEntity() instanceof Player player && getModeNum(stack) == 1) {
-                event.modifyVisibility(0.0D);
+            if (minecraftPlayer != null) {
+                ItemStack stack = minecraftPlayer.getItemBySlot(EquipmentSlot.CHEST);
+                if (event.getEntity() instanceof Player player && getModeNum(stack) == 1) {
+                    event.modifyVisibility(0.0D);
+                }
             }
         }
     }
-
 }

@@ -7,11 +7,11 @@
     ],
     "key": {
         "i": {
-            "item": "ghostarmormod:ghost_ingot"
+            "item": "minecraft:iron_ingot"
         }
     },
     "result": {
-        "item": "ghostarmormod:ghost_leggings",
+        "item": "minecraft:iron_leggings",
         "count": 1
     }
 }

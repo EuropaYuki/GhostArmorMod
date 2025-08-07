@@ -6,11 +6,11 @@
     ],
     "key": {
         "i": {
-            "item": "ghostarmormod:ghost_ingot"
+            "item": "minecraft:iron_ingot"
         }
     },
     "result": {
-        "item": "ghostarmormod:ghost_boots",
+        "item": "minecraft:iron_boots",
         "count": 1
     }
 }
