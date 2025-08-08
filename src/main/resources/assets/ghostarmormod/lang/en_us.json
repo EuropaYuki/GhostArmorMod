@@ -2,5 +2,9 @@
   "itemGroup.ghost_armor_main" : "GhostArmorMod",
   "item.ghostarmormod.ghost_ingot" : "GhostIngot",
   "key.categories.ghostarmormod" : "GhostArmorMod",
-  "key.ghostarmormod.rocketMode" : "RocketMode"
+  "key.ghostarmormod.rocketJump" : "RocketJump",
+  "item.ghostarmormod.ghost_helmet" : "GhostHelmet",
+  "item.ghostarmormod.ghost_chest_plate" : "GhostChestPlate",
+  "item.ghostarmormod.ghost_leggings" : "GhostLeggings",
+  "item.ghostarmormod.ghost_boots" : "GhostBoots"
 }

@@ -2,5 +2,9 @@
   "itemGroup.ghost_armor_main" : "ゴーストアーマーMOD",
   "item.ghostarmormod.ghost_ingot" : "幽霊の魂の延べ棒",
   "key.categories.ghostarmormod" : "ゴーストアーマーMOD",
-  "key.ghostarmormod.rocketMode" : "ロケットモード"
+  "key.ghostarmormod.rocketJump" : "ロケットモード",
+  "item.ghostarmormod.ghost_helmet" : "幽霊のヘルメット",
+  "item.ghostarmormod.ghost_chest_plate" : "幽霊のチェストプレート",
+  "item.ghostarmormod.ghost_leggings" : "幽霊のレギンス",
+  "item.ghostarmormod.ghost_boots" : "幽霊のブーツ"
 }
