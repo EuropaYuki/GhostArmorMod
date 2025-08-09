@@ -11,6 +11,8 @@ public class GhostArmorMain {
             GhostArmorModItems.GHOST_HELMET.get(),
             GhostArmorModItems.GHOST_CHEST_PLATE.get(),
             GhostArmorModItems.GHOST_LEGGINGS.get(),
-            GhostArmorModItems.GHOST_BOOTS.get()
+            GhostArmorModItems.GHOST_BOOTS.get(),
+            GhostArmorModItems.SMELTED_IRON_INGOT.get(),
+            GhostArmorModItems.MOLTEN_GLASS_INGOT.get()
     };
 }

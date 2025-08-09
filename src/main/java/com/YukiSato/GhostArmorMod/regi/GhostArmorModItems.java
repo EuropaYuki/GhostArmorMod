@@ -1,6 +1,8 @@
 package com.YukiSato.GhostArmorMod.regi;
 
 import com.YukiSato.GhostArmorMod.item.GhostIngot;
+import com.YukiSato.GhostArmorMod.item.MoltenGlassIngot;
+import com.YukiSato.GhostArmorMod.item.SmeltedIronIngot;
 import com.YukiSato.GhostArmorMod.item.armor.GhostBoots;
 import com.YukiSato.GhostArmorMod.item.armor.GhostChestPlate;
 import com.YukiSato.GhostArmorMod.item.armor.GhostHelmet;
@@ -19,4 +21,6 @@ public class GhostArmorModItems {
     public static final RegistryObject<ArmorItem> GHOST_CHEST_PLATE = ITEMS.register("ghost_chest_plate", GhostChestPlate::new);
     public static final RegistryObject<ArmorItem> GHOST_LEGGINGS = ITEMS.register("ghost_leggings", GhostLeggings::new);
     public static final RegistryObject<ArmorItem> GHOST_BOOTS = ITEMS.register("ghost_boots", GhostBoots::new);
+    public static final RegistryObject<Item> SMELTED_IRON_INGOT = ITEMS.register("smelted_iron_ingot", SmeltedIronIngot::new);
+    public static final RegistryObject<Item> MOLTEN_GLASS_INGOT = ITEMS.register("molten_glass_ingot", MoltenGlassIngot::new);
 }
