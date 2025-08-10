@@ -6,5 +6,7 @@
   "item.ghostarmormod.ghost_helmet" : "GhostHelmet",
   "item.ghostarmormod.ghost_chest_plate" : "GhostChestPlate",
   "item.ghostarmormod.ghost_leggings" : "GhostLeggings",
-  "item.ghostarmormod.ghost_boots" : "GhostBoots"
+  "item.ghostarmormod.ghost_boots" : "GhostBoots",
+  "item.ghostarmormod.molten_glass_ingot" : "MoltenGlassIngot",
+  "item.ghostarmormod.smelted_iron_ingot" : "SmeltedIronIngot"
 }

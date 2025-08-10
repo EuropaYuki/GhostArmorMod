@@ -6,5 +6,7 @@
   "item.ghostarmormod.ghost_helmet" : "幽霊のヘルメット",
   "item.ghostarmormod.ghost_chest_plate" : "幽霊のチェストプレート",
   "item.ghostarmormod.ghost_leggings" : "幽霊のレギンス",
-  "item.ghostarmormod.ghost_boots" : "幽霊のブーツ"
+  "item.ghostarmormod.ghost_boots" : "幽霊のブーツ",
+  "item.ghostarmormod.molten_glass_ingot" : "ガラスの鋳塊",
+  "item.ghostarmormod.smelted_iron_ingot" : "精錬された鉄塊"
 }
