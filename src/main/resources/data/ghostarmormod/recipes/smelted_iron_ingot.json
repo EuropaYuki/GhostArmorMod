@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "minecraft:iron_ingot"
+    },
+    "result": "ghostarmormod:smelted_iron_ingot",
+    "experience": 1,
+    "cookingtime": 100
+}
