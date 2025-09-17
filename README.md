@@ -17,3 +17,6 @@ To install GhostArmorMod, follow these steps:
 2. Place the downloaded file in your Minecraft `mods` folder.
 3. Ensure that you have Minecraft version 1.20.1 installed and Forge version 47.4.8 are installed.
 
+## Usage
+To use GhostArmorMod, you need to equip all of the following: GhostHelmet, GhostChestPlate, GhostLeggings, and GhostBoots. When you equip all of them, you will not be attacked even if you get close to the enemy. Also, you can fly in the air like a ghost by pressing the Z key.
+curseForgeURL
