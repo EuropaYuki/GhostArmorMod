@@ -28,3 +28,18 @@ If you would like to contribute to this project, please follow these steps:
 2. Create a new branch (e.g., `feature/new-feature`).
 3. Make your changes and commit them.
 4. Open a pull request.
+
+## License
+This project is licensed under the LGPL-3.0 License. See the LICENSE file for more details.
+
+## Build Instructions
+1. From here download JDK https://adoptium.net/temurin/archive/?version=17
+
+2. From here download Forge https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html
+
+3. Launch IntelliJ IDEA and open this project.
+
+4. After auto importing project files on the right side of IntelliJ IDEA, find the "Gradle" tab. Expand `GhostArmorMod -> Tasks -> build` and double-click on `build` to build the project.
+
+5. The built file is in the `GhostArmorMod/build/libs` folder.
+   Place the file into your Minecraft `mods` folder and enjoy the mod!
