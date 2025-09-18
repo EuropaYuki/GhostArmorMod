@@ -20,3 +20,11 @@ To install GhostArmorMod, follow these steps:
 ## Usage
 To use GhostArmorMod, you need to equip all of the following: GhostHelmet, GhostChestPlate, GhostLeggings, and GhostBoots. When you equip all of them, you will not be attacked even if you get close to the enemy. Also, you can fly in the air like a ghost by pressing the Z key.
 curseForgeURL
+
+## Contributing
+If you would like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (e.g., `feature/new-feature`).
+3. Make your changes and commit them.
+4. Open a pull request.
