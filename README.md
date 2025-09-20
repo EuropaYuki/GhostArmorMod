@@ -43,3 +43,6 @@ This project is licensed under the LGPL-3.0 License. See the LICENSE file for mo
 
 5. The built file is in the `GhostArmorMod/build/libs` folder.
    Place the file into your Minecraft `mods` folder and enjoy the mod!
+
+## Known Issues
+There are no known bugs at the moment, but if you find any, we apologize. Please use it at your own risk.
