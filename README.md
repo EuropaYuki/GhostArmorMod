@@ -30,7 +30,7 @@ If you would like to contribute to this project, please follow these steps:
 4. Open a pull request.
 
 ## License
-This project is licensed under the LGPL-3.0 License. See the LICENSE file for more details.
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
 ## Build Instructions
 1. From here download JDK https://adoptium.net/temurin/archive/?version=17
