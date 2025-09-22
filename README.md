@@ -1,25 +1,30 @@
 # GhostArmorMod
 ## Description
-GhostArmorMod – **GhostArmorMod** is an original mod developed for Minecraft Forge 1.20.1.
-Added ghostly armor that makes you undetectable to hostile mobs in Minecraft!
+**GhostArmorMod** is an original mod developed for Minecraft Forge 1.20.1.
+It adds ghostly armor that makes you invisible to hostile mobs in Minecraft!
 
 ## Features
-- Added new items GhostIngot, MoltenGlassIngot, and SmeltedIronIngot!
-- Added new armor items GhostHelmet, GhostChestPlate, GhostLeggings, and GhostBoots!
-- If you equip all pieces of armor, you can become transparent like a ghost!
-- Once you equip all the armor, you can fly through the air like a ghost by pressing the Z key!
+- New items: GhostIngot, MoltenGlassIngot, and SmeltedIronIngot 
+- New armor pieces: GhostHelmet, GhostChestPlate, GhostLeggings, and GhostBoots
+- Equip the full set of armor to become transparent like a ghost
+- With the full set equipped, you can fly through the air like a ghost by pressing the **Z key**
 
 ## Installation
+To install GhostArmor, follow these steps:
 
-To install GhostArmorMod, follow these steps:
-
-1. Download the latest mod file from the URL.
-2. Place the downloaded file in your Minecraft `mods` folder.
-3. Ensure that you have Minecraft version 1.20.1 installed and Forge version 47.4.8 are installed.
+1. Download the latest mod file from the provided URL 
+2. Place the downloaded file into your Minecraft `mods` folder 
+3. Make sure Minecraft 1.20.1 and Forge version 47.4.8 (or later) are installed 
 
 ## Usage
-To use GhostArmorMod, you need to equip all of the following: GhostHelmet, GhostChestPlate, GhostLeggings, and GhostBoots. When you equip all of them, you will not be attacked even if you get close to the enemy. Also, you can fly in the air like a ghost by pressing the Z key.
-curseForgeURL
+
+Equip all of the following: GhostHelmet, GhostChestPlate, GhostLeggings, and GhostBoots. 
+When the full set is worn, hostile mobs will not attack you, even at close range. 
+You can also fly through the air like a ghost by pressing the **Z key**.
+
+## Crafting Recipes
+
+GhostIngot
 
 ## Contributing
 If you would like to contribute to this project, please follow these steps:
