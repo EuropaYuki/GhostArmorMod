@@ -35,17 +35,6 @@ public class GhostChestPlate extends ArmorItem {
     }
 
     @Override
-    public void inventoryTick(ItemStack stack, Level world, Entity entity, int p_41407_, boolean p_41408_) {
-        Player player = (Player) entity;
-        if (player.getItemBySlot(EquipmentSlot.CHEST).getItem() == GhostArmorModItems.GHOST_CHEST_PLATE.get()) {
-            player.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 20, 0, false, false));
-            player.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 20, 0, false, false));
-            player.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 20, 0, false, false));
-            player.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 20, 0, false, false));
-        }
-    }
-
-    @Override
     public void onInventoryTick(ItemStack stack, Level world, Player player, int slotIndex, int selectedIndex) {
         super.onInventoryTick(stack, world, player, slotIndex, selectedIndex);
         flyMode(stack, player);
@@ -54,6 +43,12 @@ public class GhostChestPlate extends ArmorItem {
             if (GhostKeyBind.ghostKey[0].isDown()) {
                 player.lerpMotion(vec3.x * 3, vec3.y * 3, vec3.z * 3);
             }
+        }
+        if (player.getItemBySlot(EquipmentSlot.CHEST).getItem() == GhostArmorModItems.GHOST_CHEST_PLATE.get()) {
+            player.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 20, 0, false, false));
+            player.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 20, 0, false, false));
+            player.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 20, 0, false, false));
+            player.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 20, 0, false, false));
         }
     }
 
