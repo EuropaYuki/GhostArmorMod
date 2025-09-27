@@ -24,8 +24,20 @@ You can also fly through the air like a ghost by pressing the **Z key**.
 
 ## Crafting Recipes
 
-GhostIngot
-
+**SmeltedIronIngot**: Smelt an Iron Ingot in a furnace to obtain!
+![img_1.png](img_1.png)
+**MoltenGlassIngot**: Smelt a Glass Block in a furnace to obtain!
+![img.png](img.png)
+**GhostIngot**: Place one SmeltedIronIngot and one MoltenGlassIngot in the crafting table to obtain!  
+![img_2.png](img_2.png)
+**GhostHelmet**: Arrange GhostIngots in the shape of a helmet on the crafting table to craft!  
+![img_3.png](img_3.png)
+**GhostChestPlate**: Arrange GhostIngots in the shape of a chestplate on the crafting table to craft!  
+![img_4.png](img_4.png)
+**GhostLeggings**: Arrange GhostIngots in the shape of leggings on the crafting table to craft!  
+![img_5.png](img_5.png)
+**GhostBoots**: Arrange GhostIngots in the shape of boots on the crafting table to craft!
+![img_6.png](img_6.png)
 ## Contributing
 If you would like to contribute to this project, please follow these steps:
 
