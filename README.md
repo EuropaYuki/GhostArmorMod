@@ -12,7 +12,7 @@ It adds ghostly armor that makes you invisible to hostile mobs in Minecraft!
 ## Installation
 To install GhostArmor, follow these steps:
 
-1. Download the latest mod file from the provided URL 
+1. Download the latest mod file from the provided https://www.curseforge.com/minecraft/mc-mods/ghostarmor/files/all?page=1&pageSize=20&showAlphaFiles=hide
 2. Place the downloaded file into your Minecraft `mods` folder 
 3. Make sure Minecraft 1.20.1 and Forge version 47.4.8 (or later) are installed 
 
