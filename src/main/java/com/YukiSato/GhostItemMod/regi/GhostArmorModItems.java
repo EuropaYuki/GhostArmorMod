@@ -1,0 +1,26 @@
+package com.YukiSato.GhostItemMod.regi;
+
+import com.YukiSato.GhostItemMod.item.GhostIngot;
+import com.YukiSato.GhostItemMod.item.MoltenGlassIngot;
+import com.YukiSato.GhostItemMod.item.SmeltedIronIngot;
+import com.YukiSato.GhostItemMod.item.armor.GhostBoots;
+import com.YukiSato.GhostItemMod.item.armor.GhostChestPlate;
+import com.YukiSato.GhostItemMod.item.armor.GhostHelmet;
+import com.YukiSato.GhostItemMod.item.armor.GhostLeggings;
+import com.YukiSato.GhostItemMod.main.GhostItemMod;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.Item;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
+
+public class GhostArmorModItems {
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, GhostItemMod.MOD_ID);
+    public static final RegistryObject<Item> GHOST_INGOT = ITEMS.register("ghost_ingot", GhostIngot::new);
+    public static final RegistryObject<ArmorItem> GHOST_HELMET = ITEMS.register("ghost_helmet", GhostHelmet::new);
+    public static final RegistryObject<ArmorItem> GHOST_CHEST_PLATE = ITEMS.register("ghost_chest_plate", GhostChestPlate::new);
+    public static final RegistryObject<ArmorItem> GHOST_LEGGINGS = ITEMS.register("ghost_leggings", GhostLeggings::new);
+    public static final RegistryObject<ArmorItem> GHOST_BOOTS = ITEMS.register("ghost_boots", GhostBoots::new);
+    public static final RegistryObject<Item> SMELTED_IRON_INGOT = ITEMS.register("smelted_iron_ingot", SmeltedIronIngot::new);
+    public static final RegistryObject<Item> MOLTEN_GLASS_INGOT = ITEMS.register("molten_glass_ingot", MoltenGlassIngot::new);
+}

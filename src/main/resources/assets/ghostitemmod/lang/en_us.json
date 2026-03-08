@@ -1,0 +1,12 @@
+{
+  "itemGroup.ghost_armor_main" : "GhostItemMod",
+  "item.ghostitemmod.ghost_ingot" : "GhostIngot",
+  "key.categories.ghostitemmod" : "GhostArmorMod",
+  "key.ghostitemmod.rocketJump" : "RocketJump",
+  "item.ghostitemmod.ghost_helmet" : "GhostHelmet",
+  "item.ghostitemmod.ghost_chest_plate" : "GhostChestPlate",
+  "item.ghostitemmod.ghost_leggings" : "GhostLeggings",
+  "item.ghostitemmod.ghost_boots" : "GhostBoots",
+  "item.ghostitemmod.molten_glass_ingot" : "MoltenGlassIngot",
+  "item.ghostitemmod.smelted_iron_ingot" : "SmeltedIronIngot"
+}

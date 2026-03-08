@@ -1,0 +1,12 @@
+{
+  "itemGroup.ghost_armor_main" : "ゴーストアーマーMOD",
+  "item.ghostitemmod.ghost_ingot" : "幽霊の魂の延べ棒",
+  "key.categories.ghostitemmod" : "ゴーストアーマーMOD",
+  "key.ghostitemmod.rocketJump" : "ロケットモード",
+  "item.ghostitemmod.ghost_helmet" : "幽霊のヘルメット",
+  "item.ghostitemmod.ghost_chest_plate" : "幽霊のチェストプレート",
+  "item.ghostitemmod.ghost_leggings" : "幽霊のレギンス",
+  "item.ghostitemmod.ghost_boots" : "幽霊のブーツ",
+  "item.ghostitemmod.molten_glass_ingot" : "ガラスの鋳塊",
+  "item.ghostitemmod.smelted_iron_ingot" : "精錬された鉄塊"
+}
